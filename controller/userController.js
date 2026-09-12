@@ -1,4 +1,4 @@
-const userModel = require('../model/userModel');
+import userModel from "../model/userModel.js";
 
 const createUser = async (req, res) => {
     try {
@@ -72,4 +72,9 @@ const getUser = async (req, res) => {
     }
 };
 
-module.exports = { createUser, updateUser, deleteUser, getUser };
+export {
+    createUser,
+    updateUser,
+    deleteUser,
+    getUser
+};
