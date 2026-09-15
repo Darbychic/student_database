@@ -96,6 +96,7 @@ const getUser = async (req, res) => {
 
 export {
     createUser,
+    loginUser,
     updateUser,
     deleteUser,
     getUser

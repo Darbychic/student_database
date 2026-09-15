@@ -1,10 +1,13 @@
+//require ("dotenv").config()
+
+import "dotenv/config" 
 import express from 'express';
 import mongoose from 'mongoose'
 import userRouter from './routes/userRoutes.js';
 import productRouter from './routes/productRoutes.js';
 
-const compass_string = "mongodb://localhost:27017/darby8_db";
-const atlas_string = "mongodb+srv://darbychic26_db_user:darby_12@cluster0.ntc6c3h.mongodb.net/darby8_db?appName=Cluster0";
+const compass_string = process.env.COMPASS_STRING
+const atlas_string = process.env.ATLAS_STRING
 
 import dns from 'dns'
 dns.setServers(['8.8.8.8', '8.8.4.4']);
