@@ -8,7 +8,7 @@ import productRouter from './routes/productRoutes.js';
 
 const compass_string = process.env.COMPASS_STRING
 const atlas_string = process.env.ATLAS_STRING
-console.log("ATLAS_STRING:", atlas_string);
+console.log("ATLAS_STRING:", process.env.ATLAS_STRING);
 
 import dns from 'dns'
 dns.setServers(['8.8.8.8', '8.8.4.4']);
